@@ -23,6 +23,23 @@ Like - `nonce` is supported out of the box only by webpack, what you are going t
 This is why this "man-in-the-middle" was created.
 Yep, think about `left-pad` :)
 
+## Webpack
+
+> https://webpack.js.org/guides/csp/
+
+To activate the feature set a **webpack_nonce** variable needs to be included in your entry script.
+
+```
+__webpack_nonce__ = uuid(); // for example
+```
+
+Without `webpack` `__webpack_nonce__` is actually just a global variable,
+which makes it actually bundler independent,
+however "other bundlers" are able to replicate it only setting it as a global variable
+(as here in tests) which violates a "secure" nature of `nonce`.
+
+`get-nonce` is not global.
+
 ## Used in
 
 - `react-style-singleton` <- `react-remove-scroll` <- `react-focus-on`
