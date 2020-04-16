@@ -27,6 +27,11 @@ Yep, think about `left-pad` :)
 
 - `react-style-singleton` <- `react-remove-scroll` <- `react-focus-on`
 
+## Inspiration
+
+- [this issue](https://github.com/theKashey/react-remove-scroll/issues/21)
+- [styled-components](https://github.com/styled-components/styled-components/blob/147b0e9a1f10786551b13fd27452fcd5c678d5e0/packages/styled-components/src/utils/nonce.js)
+
 # Licence
 
 MIT
