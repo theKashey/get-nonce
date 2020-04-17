@@ -1,6 +1,6 @@
 {
   "name": "get-nonce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "returns nonce",
   "main": "dist/es5/index.js",
   "types": "dist/es5/index.d.ts",
