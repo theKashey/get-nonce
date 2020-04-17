@@ -20,7 +20,7 @@
   },
   "module": "dist/es2015/index.js",
   "engines": {
-    "node": ">=10"
+    "node": ">=6"
   },
   "scripts": {
     "dev": "lib-builder dev",
