@@ -47,7 +47,7 @@ however "other bundlers" are able to replicate it only setting it as a global va
 ## Inspiration
 
 - [this issue](https://github.com/theKashey/react-remove-scroll/issues/21)
-- [styled-components](https://github.com/styled-components/styled-components/blob/147b0e9a1f10786551b13fd27452fcd5c678d5e0/packages/styled-components/src/utils/nonce.js)
+- [styled-components](https://github.com/styled-components/styled-components/issues/887)
 
 # Licence
 
