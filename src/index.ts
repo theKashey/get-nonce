@@ -4,7 +4,11 @@ export const setNonce = (nonce: string) => {
   currentNonce = nonce;
 };
 
-declare var __webpack_nonce__: string;
+declare global {
+  interface Window {
+    __webpack_nonce__: string;
+  }
+}
 
 export const getNonce = () => {
   // local value is most important
@@ -13,8 +17,8 @@ export const getNonce = () => {
   }
 
   // build in webpack support
-  if (typeof __webpack_nonce__ !== 'undefined') {
-    return __webpack_nonce__;
+  if (typeof window.__webpack_nonce__ !== 'undefined') {
+    return window.__webpack_nonce__;
   }
 
   // parcel does not support nonce by itself
